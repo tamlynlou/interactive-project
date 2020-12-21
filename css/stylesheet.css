@@ -22,15 +22,11 @@ body {
 
 /* --- Static Elements --- */
 
-.start1 {
-    grid-area: 2 / 3 / span 1 / span 3;
-    height: 384px;
-}
 
 .start2 {
     grid-area: 3 / 3 / span 1 / span 3;
     height: 340px;
-    width: 1900px;
+    width: 1890px;
 }
 
 .writing { 
@@ -125,7 +121,7 @@ button {
     padding: 10px;
 }
 
-#btnOn, #partyTime, #switchOn, #drinks {
+#btnOn, #partyTime, #switchOn, #drinks1, #drinks2 {
     display: none;
 }
 
