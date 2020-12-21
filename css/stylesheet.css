@@ -57,13 +57,23 @@ body {
     margin: 0 auto;
     padding-bottom: 20px;
     position: relative;
-
  }
-
  .main img {
     position: absolute;
     bottom: 0;
     transform: translate(-50%, -11%);
+ }
+
+ .mainGif { 
+    grid-area: 3 / 4 / span 1 / span 1;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    position: relative;
+ }
+ .mainGif img {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-51.5%, -3%);
  }
 
  #upColour {
@@ -121,7 +131,7 @@ button {
     padding: 10px;
 }
 
-#btnOn, #partyTime, #switchOn, #drinks1, #drinks2 {
+#playBtnOn, #stopBtnOn, #partyTime, #switchOn, #drinks1, #drinks2, #boombox {
     display: none;
 }
 

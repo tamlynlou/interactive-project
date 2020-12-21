@@ -2,15 +2,13 @@ let playSong = document.getElementById("playBtn")
 let pauseSong = document.getElementById("pauseBtn")
 
 
-document.getElementById("volume")
-
-
 let magic = document.getElementById("surprise")
 let audience = document.getElementById("cheer")
 let champagne = document.getElementById("popBottle")
 let lightParty = document.getElementById("discoLights")
+let boom = document.getElementById('boombox')
 
-
+document.getElementById("volume")
 
 
 /* AUDIO */
@@ -23,17 +21,18 @@ const audioCrowd = new Audio("audio/smartsound_HUMAN_CROWD_Applause_Small_Audien
 playSong.onclick = function(){
     audioSong.play()
     audioSong.loop = true
+    boom.style.display = 'block';
 }
 
 pauseSong.onclick = function(){
     audioSong.pause()
+    boom.style.display = 'none';
 }
 
 audience.onclick = function () {
     if (audioCrowd.paused) audioCrowd.play()
     else audioCrowd.pause()
     audioCrowd.loop = true
-
 }
 
 
@@ -63,6 +62,15 @@ function someFunc () {
         domp2.style.display = 'block';
     } else {
         domp2.style.display = "none";
+    }
+}
+
+lightParty.onclick = function() {
+    var discoTime = document.getElementById('partyTime');
+    if (discoTime.style.display === 'none') {
+        discoTime.style.display = 'block';
+    } else {
+        discoTime.style.display = "none";
     }
 }
 
