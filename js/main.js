@@ -84,7 +84,7 @@ function someFunc () {
 }
 
 /* had a really hard time getting the button picture to change from top to bottom.
-This is my attempt. It doesn't switch back and only runs discoTime on second click */
+This is my attempt. It doesn't switch back */
 
 lightParty.onclick = function () {
     let discoTime = document.getElementById("partyTime");
