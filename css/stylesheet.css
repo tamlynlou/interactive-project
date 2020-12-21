@@ -13,6 +13,7 @@
 body {
     max-width: 1920px;
     margin: 100px auto;
+    border: 10px solid #011526;
 }
 
 .grid-container {
@@ -130,7 +131,12 @@ button {
     padding: 10px;
 }
 
-#playBtnOn, #stopBtnOn, #partyTime, #switchOn, #drinks1, #drinks2, #boombox {
+.switch button:active {
+    image src: "img/switch-bottom.png";
+}
+
+
+#playBtnOn, #stopBtnOn, #partyTime, #drinks1, #drinks2, #boombox {
     display: none;
 }
 

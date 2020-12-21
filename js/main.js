@@ -8,6 +8,7 @@ let champagne = document.getElementById("popBottle")
 let lightParty = document.getElementById("discoLights")
 let boom = document.getElementById('boombox')
 
+
 document.getElementById("volume")
 
 
@@ -33,9 +34,13 @@ audience.onclick = function () {
     if (audioCrowd.paused) audioCrowd.play()
     else audioCrowd.pause()
     audioCrowd.loop = true
+    var xyz = document.getElementById("pinkBtn2");
+    if (xyz.src = "img/switch-bottom.png"){
+        xyz.src = "img/switch-top.png";
+    } else {
+        xyz.src = "img/switch-bottom.png";
+    }
 }
-
-
 
 
 /* Changing Button Displays */
@@ -46,6 +51,12 @@ magic.onclick = function() {
         rbow.style.display = 'block';
     } else {
         rbow.style.display = "none";
+    }
+    var xyz = document.getElementById("pinkBtn1");
+    if (xyz.src = "img/switch-bottom.png"){
+        xyz.src = "img/switch-top.png";
+    } else {
+        xyz.src = "img/switch-bottom.png";
     }
 }
 
@@ -63,22 +74,26 @@ function someFunc () {
         audioPop.play();
     } else {
         domp2.style.display = "none";
-
+    }
+    var xyz = document.getElementById("pinkBtn3");
+    if (xyz.src = "img/switch-bottom.png"){
+        xyz.src = "img/switch-top.png";
+    } else {
+        xyz.src = "img/switch-bottom.png";
     }
 }
 
-lightParty.onclick = function() {
-    var discoTime = document.getElementById('partyTime');
-    if (discoTime.style.display === 'none') {
-        discoTime.style.display = 'block';
+/* had a really hard time getting the button picture to change from top to bottom.
+This is my attempt. It doesn't switch back and only runs discoTime on second click */
+
+lightParty.onclick = function () {
+    let discoTime = document.getElementById("partyTime");
+    let xyz = document.getElementById("pinkBtn4")
+    if (discoTime.style.display === "none", xyz.src = "img/switch-bottom.png") {
+        discoTime.style.display = "block"
+        xyz.src = "img/switch-top.png"
     } else {
         discoTime.style.display = "none";
+        xyz.src = "img/switch-bottom.png"
     }
 }
-
-
-
-
-
-
-
