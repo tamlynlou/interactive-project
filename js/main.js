@@ -36,9 +36,7 @@ audience.onclick = function () {
 
 }
 
-champagne.onclick = function(){
-    audioPop.play()
-}
+
 
 
 /* Changing Button Displays */

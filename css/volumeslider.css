@@ -31,6 +31,6 @@
     appearance: none;
     width: 52px;
     height: 39px;
-    background-image: url(/img/volume-slider.png);
+    background-image: url(img/volume-slider.png);
     cursor: pointer;
 }
