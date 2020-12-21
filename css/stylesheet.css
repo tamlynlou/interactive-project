@@ -1,0 +1,134 @@
+:root {
+    background-color: #F2A007;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+/* Global styles
+------------------------------------*/
+
+body {
+    max-width: 1920px;
+    margin: 100px auto;
+    border: 10px solid #011526;
+}
+
+.grid-container {
+    display: inline-grid;
+  }
+
+/* --- Static Elements --- */
+
+.start1 {
+    grid-area: 2 / 3 / span 1 / span 3;
+    height: 384px;
+}
+
+.start2 {
+    grid-area: 3 / 3 / span 1 / span 3;
+    height: 340px;
+    width: 1900px;
+}
+
+.writing { 
+    grid-area: 2 / 3 / span 1 / span 2;
+    margin: 0 auto;
+ }
+
+
+
+/* --- Interactive Elements --- */
+
+/* --- Natural States --- */
+.lights { 
+    grid-area: 2 / 3 / span 1 / span 3;
+ }
+
+.champagneLeft { 
+    grid-area: 3 / 3 / span 1 / span 1;
+ }
+
+.rainbow {
+    grid-area: 3 / 3 / span 1 / span 3;
+    margin: auto;
+}
+
+.main { 
+    grid-area: 3 / 4 / span 1 / span 1;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    position: relative;
+
+ }
+
+ .main img {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -11%);
+ }
+
+ #upColour {
+    transform: translate(-50%, 0);
+ }
+
+.champagneRight { 
+    grid-area: 3 / 5 / span 1 / span 1;
+ }
+
+.champagneRight img {
+    float: right;
+ }
+
+
+
+/* --- Audio Controls --- */
+.audioConsole { 
+    grid-area: 4 / 4 / span 1 / span 1;
+    height: 90px;
+    margin: 30px auto 20px auto;
+
+ }
+
+.controls {
+    float: left;
+
+}
+
+.animationSwitch { 
+    grid-area: 5 / 4 / span 1 / span 1;
+    height: 250px;
+    margin: 0 auto;
+    padding: 0;
+ }
+
+
+
+.switch {
+    width: 100px;
+    float: left;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+
+ }
+
+.audioConsole img, .animationSwitch img {
+     padding: 10px;
+ }
+
+button {
+    border: none;
+    background: none;
+    padding: 10px;
+}
+
+#btnOn, #partyTime, #switchOn, #drinks {
+    display: none;
+}
+
+#pauseBtn {
+    padding-right: 8px;
+}
