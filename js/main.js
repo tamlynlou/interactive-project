@@ -53,15 +53,17 @@ function someFunc () {
     var domp1 = document.getElementById('drinks1');
     if (domp1.style.display === 'none') {
         domp1.style.display = 'block';
+        audioPop.play();
     } else {
         domp1.style.display = "none";
     }
-    audioPop.play();
     var domp2 = document.getElementById('drinks2');
     if (domp2.style.display === 'none') {
         domp2.style.display = 'block';
+        audioPop.play();
     } else {
         domp2.style.display = "none";
+
     }
 }
 
