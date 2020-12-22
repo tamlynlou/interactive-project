@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/stylesheet.css">
       <link rel="stylesheet" href="css/volumeslider.css">
-    </head>
+  </head>
 
   <body>
   <div class="grid-container">
@@ -23,29 +23,16 @@
     </section>
 
     <section class="lights" id="partyTime">
-      <img src="img/disco-ball-blink.gif">
+      <img src="img/big-disco-blink.gif">
     </section>
 
     <section class="writing">
       <img src="img/writing.png">
     </section>
 
-    <section class="rainbow">
-      <img id="colourful" src="img/rainbow.gif" style="display: none;">
-    </section>
-
-    <section class="start2"></section>
-
-    <section class="champagneLeft">
-      <img src="img/bottle-left.png">
-    </section>
-    <section class="champagneLeft" id="drinks1">
-      <img src="img/bottle-open-left.png">
-    </section>
 
     <section class="main" id="upColour">
       <img src="img/upColour.png">
-
     </section>
 
     <section class="main">
@@ -56,7 +43,18 @@
       <img src="img/musicbox.gif">
     </section>
 
-  
+    <section class="rainbow">
+      <img id="colourful" src="img/rainbow.png" style="display: none;">
+    </section>
+    
+
+    <section class="champagneLeft">
+      <img src="img/bottle-left.png">
+    </section>
+    <section class="champagneLeft" id="drinks1">
+      <img src="img/bottle-open-left.png">
+    </section>
+
     <section class="champagneRight">
       <img src="img/bottle-right.png">
     </section>
@@ -69,51 +67,51 @@
 
 <!--- Audio Controls --->
 
-  <section class="audioConsole">
+    <!--- Buttons --->
+    <section class="audioConsole">
+        <div class="controls" id="playBtn">
+          <button><image src="img/play.png" id="audioBtnPlay"></button>
+        </div>
 
-      <!--- Buttons --->
-      <div class="controls" id="playBtn">
-        <button id="btnOff"> <input type='image' src="img/play.png"> </button>
-      </div>
+        <div class="controls" id="pauseBtn">
+          <button><image src="img/stop.png" id="audioBtnPause"></button>
+        </div>
 
-      <div class="controls" id="pauseBtn">
-        <button id="btnOff"> <input type='image' src="img/stop.png"> </button>
-      </div>
-
-      <div class="controls" id="volume">
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
-            
-          </div>
-      </div>
+        <div class="controls" id="volume">
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="volumeSlider">
+            </div>
+        </div>
     </section>
 
-    <section class="animationSwitch">
 
-      <!--- Switches --->
+    <!--- Switches --->
+    <section class="animationSwitch">
       <div class="switch" id="surprise">
-        <button><input type='image' id="pinkBtn1" src="img/switch-bottom.png"></button>
-        Surprise
+        <button><image id="pinkBtn1" src="img/switch-bottom.png"></button>
+        <h6>Surprise</h6>
       </div>
 
       <div class="switch" id="cheer">
-        <button><input type='image' id="pinkBtn2" src="img/switch-bottom.png"> </button>
-        Cheer
+        <button><image id="pinkBtn2" src="img/switch-bottom.png"> </button>
+        <h6>Cheer</h6>
       </div>
 
       <div class="switch" id="popBottle">
-        <button onclick="someFunc()"><input type='image' id="pinkBtn3" src="img/switch-bottom.png"></button>
-        Pop Bottle
+        <button onclick="setTimeout(resetFunction, 750)"><image id="pinkBtn3" src="img/switch-bottom.png"></button>
+        <h6>Pop Bottles</h6>
       </div>
 
       <div class="switch" id="discoLights">
-        <button><input type='image' id="pinkBtn4" src="img/switch-bottom.png"></button>
-        Lights
+        <button><image id="pinkBtn4" src="img/switch-bottom.png"></button>
+        <h6>lights</h6>
       </div>
-
     </section> 
+
+
   </div>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+
   </body>
 </html>

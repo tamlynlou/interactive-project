@@ -4,7 +4,9 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
-
+}
+:root img {
+    width: 100%;
 }
 
 /* Global styles
@@ -18,38 +20,42 @@ body {
 
 .grid-container {
     display: inline-grid;
-  }
-
-/* --- Static Elements --- */
-
-
-.start2 {
-    grid-area: 3 / 3 / span 1 / span 3;
-    height: 340px;
-    width: 1890px;
+    width: 100%;
+    grid-template-columns: 2.5% 2.5% 30% 30% 30% 2.5% 2.5%;
 }
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+
+/* Graphics 
+------------------------------------*/
 
 .writing { 
     grid-area: 2 / 3 / span 1 / span 2;
     margin: 0 auto;
- }
+}
 
-
-
-/* --- Interactive Elements --- */
-
-/* --- Natural States --- */
 .lights { 
-    grid-area: 2 / 3 / span 1 / span 3;
- }
+    grid-area: 2 / 1 / span 2 / span 7;
+    width: 100%;
+}
 
 .champagneLeft { 
     grid-area: 3 / 3 / span 1 / span 1;
- }
+}
 
 .rainbow {
-    grid-area: 3 / 3 / span 1 / span 3;
-    margin: auto;
+    grid-area: 3 / 1 / span 1 / span 7;
+    margin-top: 13%;
+}
+
+.rainbow img {
+    width: 100%;
 }
 
 .main { 
@@ -57,60 +63,64 @@ body {
     margin: 0 auto;
     padding-bottom: 20px;
     position: relative;
- }
- .main img {
+    width: auto;
+}
+.main img {
     position: absolute;
     bottom: 0;
     transform: translate(-50%, -11%);
- }
+    width: inherit;
+}
 
- .mainGif { 
+.mainGif { 
     grid-area: 3 / 4 / span 1 / span 1;
     margin: 0 auto;
     padding-bottom: 20px;
     position: relative;
- }
- .mainGif img {
+    width: auto;
+}
+.mainGif img {
     position: absolute;
     bottom: 0;
     transform: translate(-51.5%, -3%);
- }
+    width: auto;
+}
 
- #upColour {
+#upColour {
     transform: translate(-50%, 0);
- }
+    width: auto;
+}
 
 .champagneRight { 
     grid-area: 3 / 5 / span 1 / span 1;
- }
+}
 
 .champagneRight img {
     float: right;
- }
+}
 
 
 
-/* --- Audio Controls --- */
+/* Audio Controls 
+------------------------------------*/
+
 .audioConsole { 
-    grid-area: 4 / 4 / span 1 / span 1;
+    grid-area: 4 / 3 / span 1 / span 3;
     height: 90px;
     margin: 30px auto 20px auto;
-
- }
+}
 
 .controls {
     float: left;
-
+    padding: 8px;
 }
 
 .animationSwitch { 
-    grid-area: 5 / 4 / span 1 / span 1;
+    grid-area: 5 / 3 / span 1 / span 3;
     height: 250px;
     margin: 0 auto;
     padding: 0;
- }
-
-
+}
 
 .switch {
     width: 100px;
@@ -118,28 +128,17 @@ body {
     margin: auto;
     text-align: center;
     text-transform: uppercase;
+}
 
- }
-
-.audioConsole img, .animationSwitch img {
+.animationSwitch img {
      padding: 10px;
- }
-
-button {
-    border: none;
-    background: none;
-    padding: 10px;
 }
 
-.switch button:active {
-    image src: "img/switch-bottom.png";
+#playBtn {
+    padding-left: 0;
 }
 
-
-#playBtnOn, #stopBtnOn, #partyTime, #drinks1, #drinks2, #boombox {
+#partyTime, #drinks1, #drinks2, #boombox {
     display: none;
 }
 
-#pauseBtn {
-    padding-right: 8px;
-}

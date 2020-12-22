@@ -1,5 +1,10 @@
 /* --- Volume Slider --- */
 
+
+#volume {
+ margin-left: 8px;
+}
+
 #volume.controls {
     background-image: url(../img/volume-bar.png);
     width: 295px;
@@ -10,7 +15,7 @@
 .slidecontainer {
     float: left;
     width: 100%;
-    padding: 8px 0 0 7px;
+    padding: 0;
   }
 
 #volumeSlider {
@@ -24,6 +29,8 @@
     background: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    outline: none;
+    border: none;
   }
 
   .slider::-webkit-slider-thumb {
