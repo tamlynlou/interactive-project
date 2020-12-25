@@ -14,14 +14,13 @@
 
 body {
     max-width: 1920px;
-    margin: 100px auto;
-    border: 10px solid #011526;
+    margin: 0 auto;
 }
 
 .grid-container {
     display: inline-grid;
-    width: 100%;
     grid-template-columns: 2.5% 2.5% 30% 30% 30% 2.5% 2.5%;
+    border: 10px solid #011526;
 }
 
 button {
@@ -42,7 +41,6 @@ button {
 
 .lights { 
     grid-area: 2 / 1 / span 2 / span 7;
-    width: 100%;
 }
 
 .champagneLeft { 
@@ -52,44 +50,51 @@ button {
 .rainbow {
     grid-area: 3 / 1 / span 1 / span 7;
     margin-top: 13%;
-}
-
-.rainbow img {
     width: 100%;
 }
+
+.upColour { 
+    grid-area: 3 / 4 / span 1 / span 1;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    position: relative;
+ }
+ .upColour img {
+    position: absolute;
+    width: auto;
+    height: 4%;
+    bottom: 0;
+    transform: translate(-50%, -11%);
+ }
+
 
 .main { 
     grid-area: 3 / 4 / span 1 / span 1;
     margin: 0 auto;
     padding-bottom: 20px;
     position: relative;
-    width: auto;
-}
-.main img {
+ }
+ .main img {
     position: absolute;
+    width: auto;
+    height: 35%;
     bottom: 0;
     transform: translate(-50%, -11%);
-    width: inherit;
-}
+ }
 
-.mainGif { 
+ .mainGif { 
     grid-area: 3 / 4 / span 1 / span 1;
     margin: 0 auto;
     padding-bottom: 20px;
     position: relative;
-    width: auto;
-}
-.mainGif img {
+ }
+ .mainGif img {
     position: absolute;
+    width: auto;
+    height: 40%;
     bottom: 0;
-    transform: translate(-51.5%, -3%);
-    width: auto;
-}
-
-#upColour {
-    transform: translate(-50%, 0);
-    width: auto;
-}
+    transform: translate(-51.5%, -4%);
+ }
 
 .champagneRight { 
     grid-area: 3 / 5 / span 1 / span 1;
@@ -106,8 +111,7 @@ button {
 
 .audioConsole { 
     grid-area: 4 / 3 / span 1 / span 3;
-    height: 90px;
-    margin: 30px auto 20px auto;
+    margin: 2% auto 2% auto;
 }
 
 .controls {
@@ -115,23 +119,26 @@ button {
     padding: 8px;
 }
 
+.audioConsole button {
+    height: 50%;
+}
+
 .animationSwitch { 
     grid-area: 5 / 3 / span 1 / span 3;
-    height: 250px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 30px 0;
 }
 
 .switch {
-    width: 100px;
     float: left;
     margin: auto;
+    max-width: 105px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.animationSwitch img {
-     padding: 10px;
+.animationSwitch button {
+    padding: 0 10px 10px 10px;
 }
 
 #playBtn {
